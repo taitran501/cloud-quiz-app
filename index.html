@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Cloud Computing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Home Screen -->
+        <div id="homeScreen" class="screen active">
+            <header class="header">
+                <h1><i class="fas fa-brain"></i> Cloud Computing Quiz</h1>
+                <p>Ôn tập kiến thức Cloud Computing một cách hiệu quả</p>
+            </header>
+
+            <div class="menu-container">
+                <div class="menu-card" onclick="showQuizSelection()">
+                    <div class="card-icon">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3>Chọn Quiz Cụ Thể</h3>
+                    <p>Ôn tập từng quiz riêng biệt</p>
+                </div>
+
+                <div class="menu-card" onclick="showRandomQuiz()">
+                    <div class="card-icon">
+                        <i class="fas fa-shuffle"></i>
+                    </div>
+                    <h3>Quiz Ngẫu Nhiên</h3>
+                    <p>Câu hỏi random từ tất cả quiz</p>
+                </div>
+
+                <div class="menu-card" onclick="showAllQuizzes()">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Ôn Toàn Bộ</h3>
+                    <p>Làm tất cả câu hỏi có sẵn</p>
+                </div>
+
+                <div class="menu-card" onclick="showStudySelection()">
+                    <div class="card-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Ôn Tập</h3>
+                    <p>Xem câu hỏi và đáp án đúng</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Selection Screen -->
+        <div id="quizSelectionScreen" class="screen">
+            <header class="header">
+                <button class="back-btn" onclick="showHome()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h2>Chọn Quiz</h2>
+            </header>
+
+            <div class="quiz-list" id="quizList">
+                <!-- Quiz list will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Study Selection Screen -->
+        <div id="studySelectionScreen" class="screen">
+            <header class="header">
+                <button class="back-btn" onclick="showHome()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h2>Chọn Quiz Để Ôn Tập</h2>
+            </header>
+
+            <div class="quiz-list" id="studyQuizList">
+                <!-- Study quiz list will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Quiz Settings Screen -->
+        <div id="settingsScreen" class="screen">
+            <header class="header">
+                <button class="back-btn" onclick="goBackFromSettings()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h2>Cài Đặt Quiz</h2>
+            </header>
+
+            <div class="settings-container">
+                <div class="setting-group">
+                    <label for="questionCount">Số lượng câu hỏi:</label>
+                    <div class="input-group">
+                        <input type="number" id="questionCount" min="1" value="10">
+                        <span class="input-suffix">câu</span>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="timeLimit">Thời gian làm bài:</label>
+                    <div class="time-options">
+                        <button class="time-btn" onclick="setTimeLimit(300)">5 phút</button>
+                        <button class="time-btn" onclick="setTimeLimit(600)">10 phút</button>
+                        <button class="time-btn" onclick="setTimeLimit(900)">15 phút</button>
+                        <button class="time-btn" onclick="setTimeLimit(1800)">30 phút</button>
+                        <button class="time-btn active" onclick="setTimeLimit(0)">Vô hạn</button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label>Tùy chọn khác:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="shuffleQuestions" checked>
+                            <span class="checkmark"></span>
+                            Trộn thứ tự câu hỏi
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="shuffleAnswers" checked>
+                            <span class="checkmark"></span>
+                            Trộn thứ tự đáp án
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="showExplanations">
+                            <span class="checkmark"></span>
+                            Hiển thị giải thích (nếu có)
+                        </label>
+                    </div>
+                </div>
+
+                <button class="start-btn" onclick="startQuiz()">
+                    <i class="fas fa-play"></i>
+                    Bắt Đầu Quiz
+                </button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <header class="quiz-header">
+                <div class="quiz-info">
+                    <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+                </div>
+                <div id="timer" class="timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="timeDisplay">∞</span>
+                </div>
+                <button class="exit-btn" onclick="confirmExit()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </header>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-text" id="questionText">
+                    <!-- Question will be loaded here -->
+                </div>
+
+                <div class="answers-container" id="answersContainer">
+                    <!-- Answers will be loaded here -->
+                </div>
+
+                <div class="quiz-controls">
+                    <button class="control-btn" id="prevBtn" onclick="previousQuestion()" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                        Trước
+                    </button>
+                    <button class="control-btn primary" id="nextBtn" onclick="nextQuestion()">
+                        Tiếp
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Study Screen -->
+        <div id="studyScreen" class="screen">
+            <header class="quiz-header">
+                <div class="quiz-info">
+                    <span id="studyCurrentQuestion">1</span> / <span id="studyTotalQuestions">10</span>
+                </div>
+                <div class="study-quiz-name" id="studyQuizName">
+                    <!-- Quiz name will be displayed here -->
+                </div>
+                <button class="exit-btn" onclick="exitStudy()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </header>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="studyProgressFill"></div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-text" id="studyQuestionText">
+                    <!-- Question will be loaded here -->
+                </div>
+
+                <div class="study-answers-container" id="studyAnswersContainer">
+                    <!-- Answers with correct indicators will be loaded here -->
+                </div>
+
+                <div class="quiz-controls">
+                    <button class="control-btn" id="studyPrevBtn" onclick="previousStudyQuestion()" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                        Trước
+                    </button>
+                    <button class="control-btn primary" id="studyNextBtn" onclick="nextStudyQuestion()">
+                        Tiếp
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen">
+            <header class="header">
+                <h2>Kết Quả Quiz</h2>
+            </header>
+
+            <div class="results-container">
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="scorePercentage">0%</span>
+                    </div>
+                    <div class="score-details">
+                        <p><span id="correctAnswers">0</span> / <span id="totalAnswers">0</span> câu đúng</p>
+                        <p class="time-taken">Thời gian: <span id="timeTaken">0 phút 0 giây</span></p>
+                    </div>
+                </div>
+
+                <div class="performance-badge" id="performanceBadge">
+                    <i class="fas fa-trophy"></i>
+                    <span>Xuất sắc!</span>
+                </div>
+
+                <div class="results-actions">
+                    <button class="action-btn" onclick="reviewAnswers()">
+                        <i class="fas fa-eye"></i>
+                        Xem Lại Đáp Án
+                    </button>
+                    <button class="action-btn primary" onclick="showHome()">
+                        <i class="fas fa-home"></i>
+                        Về Trang Chủ
+                    </button>
+                    <button class="action-btn" onclick="restartQuiz()">
+                        <i class="fas fa-redo"></i>
+                        Làm Lại
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Screen -->
+        <div id="reviewScreen" class="screen">
+            <header class="header">
+                <button class="back-btn" onclick="showResults()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h2>Xem Lại Đáp Án</h2>
+            </header>
+
+            <div class="review-container" id="reviewContainer">
+                <!-- Review content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <p>Đang tải dữ liệu...</p>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <h3 id="confirmTitle">Xác nhận</h3>
+            <p id="confirmMessage">Bạn có chắc chắn muốn thực hiện hành động này?</p>
+            <div class="modal-actions">
+                <button class="modal-btn" onclick="closeModal()">Hủy</button>
+                <button class="modal-btn primary" id="confirmBtn">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 

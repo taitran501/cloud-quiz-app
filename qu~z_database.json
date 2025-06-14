@@ -1,0 +1,4526 @@
+{
+  "Quiz 1": {
+    "questions": [
+      {
+        "question": "The 5th utility là gì?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Nước",
+            "isCorrect": false
+          },
+          {
+            "text": "Điện",
+            "isCorrect": false
+          },
+          {
+            "text": "Gas",
+            "isCorrect": false
+          },
+          {
+            "text": "Cloud Computing",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Cloud Computing"
+        ]
+      },
+      {
+        "question": "Trong các mẫu sau, mẫu nào không phải là 1 dạng của Distributed Computing",
+        "type": "single",
+        "options": [
+          {
+            "text": "Cluster computing",
+            "isCorrect": false
+          },
+          {
+            "text": "Grid computing",
+            "isCorrect": false
+          },
+          {
+            "text": "Cloud computing",
+            "isCorrect": false
+          },
+          {
+            "text": "Personal computing",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Personal computing"
+        ]
+      },
+      {
+        "question": "Các Node trong grid computing:",
+        "type": "single",
+        "options": [
+          {
+            "text": "Môi trường không đồng nhất (heterogeneous)",
+            "isCorrect": true
+          },
+          {
+            "text": "Môi trường đồng nhất (Homogeneity )",
+            "isCorrect": false
+          },
+          {
+            "text": "Cùng sử dụng chung bộ nhớ (Shared memory)",
+            "isCorrect": false
+          },
+          {
+            "text": "Trộn lẫn giữa môi trường đồng nhất và không đồng nhất (Mixed)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Môi trường không đồng nhất (heterogeneous)"
+        ]
+      },
+      {
+        "question": "Trong cluster computing các node giao tiếp với nhau dựa trên:",
+        "type": "single",
+        "options": [
+          {
+            "text": "MPI-blocking",
+            "isCorrect": false
+          },
+          {
+            "text": "MPI-synchronization",
+            "isCorrect": true
+          },
+          {
+            "text": "MPI-nonblocking",
+            "isCorrect": false
+          },
+          {
+            "text": "MPI-asynchronization",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "MPI-synchronization"
+        ]
+      },
+      {
+        "question": "Trong mô hình lập trình song song theo cách chia của Flynn thì mô hình nào dùng 1 lệnh để xử lý nhiều dữ liệu",
+        "type": "single",
+        "options": [
+          {
+            "text": "SIMD",
+            "isCorrect": true
+          },
+          {
+            "text": "MIMD",
+            "isCorrect": false
+          },
+          {
+            "text": "SISD",
+            "isCorrect": false
+          },
+          {
+            "text": "MISD",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "SIMD"
+        ]
+      },
+      {
+        "question": "Những giá trị cốt lõi của cloud computing",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Dùng bao nhiêu trả bấy nhiêu - Pay for what is used",
+            "isCorrect": true
+          },
+          {
+            "text": "Loại bỏ sự phức tạp của IT - Removing IT complexity",
+            "isCorrect": true
+          },
+          {
+            "text": "Chi phí thấp - Lower costs",
+            "isCorrect": true
+          },
+          {
+            "text": "Cung cấp nhanh chóng - Rapid provisioning",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Chi phí thấp - Lower costs",
+          "Dùng bao nhiêu trả bấy nhiêu - Pay for what is used",
+          "Cung cấp nhanh chóng - Rapid provisioning",
+          "Loại bỏ sự phức tạp của IT - Removing IT complexity"
+        ]
+      },
+      {
+        "question": "Trong lập trình song song có những mô hình nào",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Distributed-memory model",
+            "isCorrect": true
+          },
+          {
+            "text": "MIMD",
+            "isCorrect": false
+          },
+          {
+            "text": "Massage Passing Interface (MPI)",
+            "isCorrect": true
+          },
+          {
+            "text": "Shared-memory model",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Shared-memory model",
+          "Distributed-memory model",
+          "Massage Passing Interface (MPI)"
+        ]
+      },
+      {
+        "question": "Khi tổ chức ảo (Virtual Organization - VO) chia sẻ tài nguyên thì tuân theo các luật nào:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Tài nguyên nào được chia sẻ - what is shared",
+            "isCorrect": true
+          },
+          {
+            "text": "Ai được chia sẻ - who is allowed to share",
+            "isCorrect": true
+          },
+          {
+            "text": "Trong điều kiện nào được chia sẻ - the conditions under which sharing occurs",
+            "isCorrect": true
+          },
+          {
+            "text": "Dùng các tiêu chuẩn mở - Uses open standards and interfaces",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Tài nguyên nào được chia sẻ - what is shared",
+          "Ai được chia sẻ - who is allowed to share",
+          "Trong điều kiện nào được chia sẻ - the conditions under which sharing occurs"
+        ]
+      },
+      {
+        "question": "Trong cloud computing, dưới góc nhìn của 1 tổ chức (doanh nghiệp, chính phủ) thì cần những gì:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "invisible",
+            "isCorrect": false
+          },
+          {
+            "text": "Zero management",
+            "isCorrect": false
+          },
+          {
+            "text": "quality of service",
+            "isCorrect": true
+          },
+          {
+            "text": "providing unbounded scale",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "providing unbounded scale",
+          "quality of service"
+        ]
+      },
+      {
+        "question": "Trong cloud computing, thuật ngữ nào dùng để mô tả khả năng vô hạn (Endless possibility)",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Availability",
+            "isCorrect": true
+          },
+          {
+            "text": "One single integrated environment",
+            "isCorrect": false
+          },
+          {
+            "text": "Scalability",
+            "isCorrect": true
+          },
+          {
+            "text": "Accessibility",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Scalability",
+          "Accessibility",
+          "Availability"
+        ]
+      }
+    ]
+  },
+  "Quiz 2": {
+    "questions": [
+      {
+        "question": "Which of the following APIs is NOT supported by Azure Cosmos DB?",
+        "type": "single",
+        "options": [
+          {
+            "text": "SQL API",
+            "isCorrect": false
+          },
+          {
+            "text": "MongoDB API/p>",
+            "isCorrect": false
+          },
+          {
+            "text": "Cassandra API",
+            "isCorrect": false
+          },
+          {
+            "text": "Oracle API",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Oracle API"
+        ]
+      },
+      {
+        "question": "You have been hired as an external consultant to evaluate Azure Blob storage. Your team has been using Blob storage for a month now. You want to find the usage and availability of the Blob storage.You can find the Blob availability metrics from the Azure Monitor -> Storage Accounts –> Insights tab.",
+        "type": "truefalse",
+        "options": [],
+        "correctAnswers": []
+      },
+      {
+        "question": "In Azure Storage, what is the default protocol used for accessing files in File Storage?",
+        "type": "single",
+        "options": [
+          {
+            "text": "FTP",
+            "isCorrect": false
+          },
+          {
+            "text": "NFS",
+            "isCorrect": false
+          },
+          {
+            "text": "SMB/p>",
+            "isCorrect": true
+          },
+          {
+            "text": "HTTP",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "SMB/p>"
+        ]
+      },
+      {
+        "question": "You have been hired as an external consultant to evaluate Azure Blob storage. Your team has been using Blob storage for a month now. You want to find the usage and availability of the Blob storage.You can find the Blob availability metrics from the Storage Metrics tab.",
+        "type": "truefalse",
+        "options": [],
+        "correctAnswers": []
+      },
+      {
+        "question": "Which Azure Storage option is optimized for storing frequently accessed data?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Archive Tier/p>",
+            "isCorrect": false
+          },
+          {
+            "text": "Read-Only Tier",
+            "isCorrect": false
+          },
+          {
+            "text": "Hot Access Tier",
+            "isCorrect": true
+          },
+          {
+            "text": "Cool Access Tier",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Hot Access Tier"
+        ]
+      },
+      {
+        "question": "Trong các đặc điểm sau, đặc điểm nào nói đến chất lượng dịch vụ:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Quản lý băng thông",
+            "isCorrect": false
+          },
+          {
+            "text": "Đánh giá khách hàng",
+            "isCorrect": false
+          },
+          {
+            "text": "Kiểm soát luồng dựa trên mức độ ưu tiên",
+            "isCorrect": false
+          },
+          {
+            "text": "Đánh giá công nghệ",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Quản lý băng thông",
+          "Kiểm soát luồng dựa trên mức độ ưu tiên"
+        ]
+      },
+      {
+        "question": "Các kỹ thuật được sử dụng trong điện toán đám mây.",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Hardware virtualization",
+            "isCorrect": true
+          },
+          {
+            "text": "Parallelized and distributed computing",
+            "isCorrect": true
+          },
+          {
+            "text": "Web service",
+            "isCorrect": true
+          },
+          {
+            "text": "Web browser",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Hardware virtualization",
+          "Parallelized and distributed computing",
+          "Web service"
+        ]
+      },
+      {
+        "question": "What type of redundancy is provided by Locally Redundant Storage (LRS)?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Data is backed up only once/p>",
+            "isCorrect": false
+          },
+          {
+            "text": "Data is not replicated",
+            "isCorrect": false
+          },
+          {
+            "text": "Data is replicated within the same data center",
+            "isCorrect": true
+          },
+          {
+            "text": "Data is replicated across multiple regions",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Data is replicated within the same data center"
+        ]
+      },
+      {
+        "question": "Shared access signatureYou are the security engineer for a company. One of the developers has mistakenly checked in the storage access key as part of a test file into a Git repository. You are planning to immediately regenerate new access keys. Which of the following existing authorization keys will have to be regenerated?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Service shared access signature keys",
+            "isCorrect": true
+          },
+          {
+            "text": "Account shared access signature keys",
+            "isCorrect": true
+          },
+          {
+            "text": "User delegation shared access signature keys",
+            "isCorrect": false
+          },
+          {
+            "text": "AAD security groups",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Account shared access signature keys",
+          "Service shared access signature keys"
+        ]
+      },
+      {
+        "question": "Azure Cosmos DB is best described as which type of database?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Key-value store/p>",
+            "isCorrect": false
+          },
+          {
+            "text": "Distributed, multi-model database",
+            "isCorrect": true
+          },
+          {
+            "text": "Document-only database",
+            "isCorrect": false
+          },
+          {
+            "text": "Relational database",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Distributed",
+          "multi-model database"
+        ]
+      },
+      {
+        "question": "You have been hired as an external consultant to evaluate Azure Blob storage. Your team has been using Blob storage for a month now. You want to find the usage and availability of the Blob storage.You can find the Blob storage usage from the Storage Metrics tab.",
+        "type": "truefalse",
+        "options": [],
+        "correctAnswers": []
+      },
+      {
+        "question": "What type of scaling does Azure Cosmos DB provide to handle throughput and storage?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Vertical scaling only",
+            "isCorrect": false
+          },
+          {
+            "text": "Both vertical and horizontal scaling/p>",
+            "isCorrect": true
+          },
+          {
+            "text": "No scaling capability",
+            "isCorrect": false
+          },
+          {
+            "text": "Horizontal scaling only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Both vertical and horizontal scaling/p>"
+        ]
+      },
+      {
+        "question": "Which of the following PowerShell commands is used to create a new Azure Storage account?",
+        "type": "single",
+        "options": [
+          {
+            "text": "New-AzureStorageAccount",
+            "isCorrect": false
+          },
+          {
+            "text": "Create-AzStorageAccount",
+            "isCorrect": false
+          },
+          {
+            "text": "Add-AzStorageAccount",
+            "isCorrect": false
+          },
+          {
+            "text": "New-AzStorageAccount/p>",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "New-AzStorageAccount/p>"
+        ]
+      },
+      {
+        "question": "Which of the following is NOT a type of Azure Storage account?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Archive Storage",
+            "isCorrect": true
+          },
+          {
+            "text": "Blob Storage",
+            "isCorrect": false
+          },
+          {
+            "text": "General-purpose v1",
+            "isCorrect": false
+          },
+          {
+            "text": "File Storage/p>",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Archive Storage"
+        ]
+      },
+      {
+        "question": "Những kỹ thuật nào giúp cho hệ thống cloud computing có khả năng chịu lỗi",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "replicate",
+            "isCorrect": true
+          },
+          {
+            "text": "access",
+            "isCorrect": false
+          },
+          {
+            "text": "backup",
+            "isCorrect": true
+          },
+          {
+            "text": "single sign on",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "replicate",
+          "backup"
+        ]
+      },
+      {
+        "question": "How does Azure Storage pricing typically work?",
+        "type": "single",
+        "options": [
+          {
+            "text": "By the amount of data stored and data transactions",
+            "isCorrect": true
+          },
+          {
+            "text": "Based on subscription type/p>",
+            "isCorrect": false
+          },
+          {
+            "text": "By the number of requests made to the storage",
+            "isCorrect": false
+          },
+          {
+            "text": "By the total size of the files stored",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "By the amount of data stored and data transactions"
+        ]
+      }
+    ]
+  },
+  "Quiz 3": {
+    "questions": [
+      {
+        "question": "Lợi ích của điện toán đám mây đối với công ty",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Cải thiện tài nguyên sử dụng",
+            "isCorrect": true
+          },
+          {
+            "text": "Giảm đầu tư ban đầu",
+            "isCorrect": true
+          },
+          {
+            "text": "Giảm nhu cầu sức mạnh tính toán máy cá nhân",
+            "isCorrect": false
+          },
+          {
+            "text": "Giảm chi phí vận hành",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Giảm đầu tư ban đầu",
+          "Giảm chi phí vận hành",
+          "Cải thiện tài nguyên sử dụng"
+        ]
+      },
+      {
+        "question": "Trong các module sau, module nào thuộc về SaaS",
+        "type": "single",
+        "options": [
+          {
+            "text": "Mobile device",
+            "isCorrect": true
+          },
+          {
+            "text": "Runtime Environment",
+            "isCorrect": false
+          },
+          {
+            "text": "Resource Management Interface",
+            "isCorrect": false
+          },
+          {
+            "text": "Development Tools",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Mobile device"
+        ]
+      },
+      {
+        "question": "Các component trong Resource Management Interface:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Virtual Network",
+            "isCorrect": true
+          },
+          {
+            "text": "Virtual Machine",
+            "isCorrect": true
+          },
+          {
+            "text": "Virtual Storage",
+            "isCorrect": true
+          },
+          {
+            "text": "Police-Based Control",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Virtual Machine",
+          "Virtual Storage",
+          "Virtual Network"
+        ]
+      },
+      {
+        "question": "Các mô hình triển khải cloud",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Private cloud",
+            "isCorrect": true
+          },
+          {
+            "text": "Hybrid Cloud",
+            "isCorrect": true
+          },
+          {
+            "text": "Personal Cloud",
+            "isCorrect": false
+          },
+          {
+            "text": "Public cloud",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Public cloud",
+          "Private cloud",
+          "Hybrid Cloud"
+        ]
+      },
+      {
+        "question": "MS Azure sử dụng database nào trong lưu trữ dữ liệu",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "BigQuery",
+            "isCorrect": false
+          },
+          {
+            "text": "MSSQL",
+            "isCorrect": true
+          },
+          {
+            "text": "DocumentDB",
+            "isCorrect": false
+          },
+          {
+            "text": "Relational Database Server (RDS)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "MSSQL",
+          "DocumentDB"
+        ]
+      },
+      {
+        "question": "Azure Databricks được xếp vào model nào?",
+        "type": "single",
+        "options": [
+          {
+            "text": "SaaS",
+            "isCorrect": false
+          },
+          {
+            "text": "CaaS",
+            "isCorrect": false
+          },
+          {
+            "text": "IaaS",
+            "isCorrect": false
+          },
+          {
+            "text": "PaaS",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "PaaS"
+        ]
+      },
+      {
+        "question": "Which Azure Active Directory (Azure AD) feature is used to provide access to resources based on organizational policies?",
+        "type": "single",
+        "options": [
+          {
+            "text": "administrative units",
+            "isCorrect": false
+          },
+          {
+            "text": "Conditional Access",
+            "isCorrect": true
+          },
+          {
+            "text": "multi-factor authentication (MFA)",
+            "isCorrect": false
+          },
+          {
+            "text": "single sign-on (SSO)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Conditional Access"
+        ]
+      },
+      {
+        "question": "Which cloud approach is used by organizations to take full advantage of on-premises technology investments and allows data and applications to be shared between two environments?",
+        "type": "single",
+        "options": [
+          {
+            "text": "hybrid cloud",
+            "isCorrect": true
+          },
+          {
+            "text": "private cloud",
+            "isCorrect": false
+          },
+          {
+            "text": "public cloud",
+            "isCorrect": false
+          },
+          {
+            "text": "on-premises datacenter",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "hybrid cloud"
+        ]
+      },
+      {
+        "question": "Choose the right storage solution to collect and store all the different types of data.",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Synapse SQL pool",
+            "isCorrect": false
+          },
+          {
+            "text": "Event Hubs",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Files",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Data Lake Gen2",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Azure Data Lake Gen2"
+        ]
+      },
+      {
+        "question": "Which tool is commonly used to develop and execute queries in Azure Synapse Analytics?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Data Studio",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure DevOps",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Data Factory",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Machine Learning Studio",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Data Studio"
+        ]
+      },
+      {
+        "question": "Q01: Một số thuộc tính mong muốn của một hệ thống phân tán quy mô lớn đã được giới thiệu trong bài 1. Danh sách bao gồm tính minh bạch của quyền truy cập, vị trí, đồng thời, sao chép, khả năng chịu lỗi, di chuyển, hiệu suất và mở rộng. Phân tích cách từng thuộc tính này áp dụng cho Azure mà em biết.",
+        "type": "single",
+        "options": [],
+        "correctAnswers": []
+      },
+      {
+        "question": "You use __________ to organize resources in an Azure subscription.",
+        "type": "single",
+        "options": [
+          {
+            "text": "Administrative units",
+            "isCorrect": false
+          },
+          {
+            "text": "Management groups",
+            "isCorrect": false
+          },
+          {
+            "text": "Resource groups",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure regions",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Resource groups"
+        ]
+      },
+      {
+        "question": "_________copies data to a secondary region from the primary region across multiple datacenters that are located many miles apart.",
+        "type": "single",
+        "options": [
+          {
+            "text": "Premium storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Locally-redundant storage (LRS)",
+            "isCorrect": false
+          },
+          {
+            "text": "Geo-redundant storage (GRS)",
+            "isCorrect": true
+          },
+          {
+            "text": "Zone redundant storage (ZRS)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Geo-redundant storage (GRS)"
+        ]
+      }
+    ]
+  },
+  "Quiz 5": {
+    "questions": [
+      {
+        "question": "How does Text Analytics handle multi-language text data?",
+        "type": "single",
+        "options": [
+          {
+            "text": "It cannot analyze multi-language text data",
+            "isCorrect": false
+          },
+          {
+            "text": "It automatically detects the language of the text and performs analysis accordingly",
+            "isCorrect": true
+          },
+          {
+            "text": "It requires language-specific models to be specified for each text",
+            "isCorrect": false
+          },
+          {
+            "text": "It only supports analysis in English",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "It automatically detects the language of the text and performs analysis accordingly"
+        ]
+      },
+      {
+        "question": "Cho biết có bao nhiêu cách hiện thực của bộ mô phỏng",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Thông dịch",
+            "isCorrect": true
+          },
+          {
+            "text": "Bộ chuyển dịch nhị phân động",
+            "isCorrect": true
+          },
+          {
+            "text": "Bộ chuyển dịch nhị phân tĩnh",
+            "isCorrect": true
+          },
+          {
+            "text": "Thư viện động",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Thông dịch",
+          "Bộ chuyển dịch nhị phân tĩnh",
+          "Bộ chuyển dịch nhị phân động"
+        ]
+      },
+      {
+        "question": "What is the main benefit of using Text Analytics in Azure Cognitive Services?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Ability to process structured data",
+            "isCorrect": false
+          },
+          {
+            "text": "Automatic translation of text between languages",
+            "isCorrect": false
+          },
+          {
+            "text": "Real-time analysis of text data",
+            "isCorrect": false
+          },
+          {
+            "text": "Integration with other Azure services",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Integration with other Azure services"
+        ]
+      },
+      {
+        "question": "Bộ chuyển dịch nhị phân tĩnh",
+        "type": "single",
+        "options": [
+          {
+            "text": "Dịch tuần tự từng câu lệnh",
+            "isCorrect": false
+          },
+          {
+            "text": "Kết hợp dịch từng lệnh và khối lệnh, bên cạnh đó sử dụng kỹ thuật tối ưu lúc biên dịch chương trình",
+            "isCorrect": false
+          },
+          {
+            "text": "Dịch từng câu lệnh",
+            "isCorrect": false
+          },
+          {
+            "text": "Dịch cả khối lệnh và kết hợp kỹ thuật tối ưu lúc biên dịch chương trình",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Dịch cả khối lệnh và kết hợp kỹ thuật tối ưu lúc biên dịch chương trình"
+        ]
+      },
+      {
+        "question": "You have data from various data sources in JSON and CSV formats that has been copied over into Azure Data Lake Gen2. You need to graphically visualize the data. What tool would you use?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Azure Databricks/Synapse Spark",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Storage Explorer",
+            "isCorrect": false
+          },
+          {
+            "text": "Power BI",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Data Factory",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Databricks/Synapse Spark"
+        ]
+      },
+      {
+        "question": "Các câu lệnh dùng để quản lý trạng thái của hệ thống (VMCS - Virtual Machine Control Structure), khi hệ thống rơi vào State Area, cặp câu lệnh nào dùng để lưu trữ trạng thái của hệ thống máy ảo và máy thực.",
+        "type": "single",
+        "options": [
+          {
+            "text": "VM-Context & VM-Control",
+            "isCorrect": false
+          },
+          {
+            "text": "VM Non-Root Mode & VM Root Mode",
+            "isCorrect": false
+          },
+          {
+            "text": "VM-Entry & VM-Exit",
+            "isCorrect": true
+          },
+          {
+            "text": "VM-Entry and VM-Exit process",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "VM-Entry & VM-Exit"
+        ]
+      },
+      {
+        "question": "What is the primary advantage of using Azure Databricks for data analysis?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Simple user interface",
+            "isCorrect": false
+          },
+          {
+            "text": "Low cost of implementation",
+            "isCorrect": false
+          },
+          {
+            "text": "Real-time data processing",
+            "isCorrect": true
+          },
+          {
+            "text": "High availability and scalability",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Real-time data processing"
+        ]
+      },
+      {
+        "question": "Which type of data can be analyzed using Text Analytics?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Unstructured data only",
+            "isCorrect": true
+          },
+          {
+            "text": "Both structured and unstructured data",
+            "isCorrect": false
+          },
+          {
+            "text": "Numerical data only",
+            "isCorrect": false
+          },
+          {
+            "text": "Structured data only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Unstructured data only"
+        ]
+      },
+      {
+        "question": "Khi CPU chạy ở chế độ usermode, những trap nào có thể xảy ra",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Error",
+            "isCorrect": false
+          },
+          {
+            "text": "Hardware Interrupts",
+            "isCorrect": true
+          },
+          {
+            "text": "System call",
+            "isCorrect": true
+          },
+          {
+            "text": "Exception",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "System call",
+          "Hardware Interrupts",
+          "Exception"
+        ]
+      },
+      {
+        "question": "Azure Automation accounts allow for the execution of PowerShell runbooks at a predefined schedule.",
+        "type": "truefalse",
+        "options": [],
+        "correctAnswers": []
+      },
+      {
+        "question": "How does Azure Databricks handle large volumes of data?",
+        "type": "single",
+        "options": [
+          {
+            "text": "By partitioning data across multiple nodes for parallel processing",
+            "isCorrect": true
+          },
+          {
+            "text": "By discarding old data to make room for new data",
+            "isCorrect": false
+          },
+          {
+            "text": "By compressing data to reduce storage requirements",
+            "isCorrect": false
+          },
+          {
+            "text": "By storing data in memory for fast access",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "By partitioning data across multiple nodes for parallel processing"
+        ]
+      },
+      {
+        "question": "What is the maximum number of containers that can be deployed in a single Azure Container Group?",
+        "type": "single",
+        "options": [
+          {
+            "text": "10",
+            "isCorrect": false
+          },
+          {
+            "text": "1000",
+            "isCorrect": false
+          },
+          {
+            "text": "There is no hard limit",
+            "isCorrect": true
+          },
+          {
+            "text": "100",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "There is no hard limit"
+        ]
+      },
+      {
+        "question": "Which of the following tools cannot be used for managing Azure resources?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Azure PowerShell",
+            "isCorrect": false
+          },
+          {
+            "text": "Terraform",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure DevOps CLI",
+            "isCorrect": false
+          },
+          {
+            "text": "CloudFormation",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "CloudFormation"
+        ]
+      },
+      {
+        "question": "You have a table as follows in Azure SQL:CREATE TABLE Books {\nBookID VARCHAR(20) NOT NULL,\nCategoryID VARCHAR (20) NOT NULL,\nBookName VARCHAR (100),\nAuthorID VARCHAR (20),\nISBN VARCHAR (40)\n}Assume there are 100 million entries in this table.CategoryIDhas about 25 entries and 60% of the books align to about 20 categories. You need to optimize the performance of this table for queries that aggregate onCategoryID. What partitioning technique would you use and what key would you choose?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Vertical partitioning with BookID",
+            "isCorrect": false
+          },
+          {
+            "text": "Horizontal partitioning with BookID",
+            "isCorrect": true
+          },
+          {
+            "text": "Horizontal partitioning with CategoryID",
+            "isCorrect": false
+          },
+          {
+            "text": "Vertical partitioning withCategoryID",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Horizontal partitioning with BookID"
+        ]
+      },
+      {
+        "question": "Các vấn đề gặp phải khi thực hiện ánh xạ thanh ghi",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Sử dụng phần mềm ánh xạ thanh ghi",
+            "isCorrect": false
+          },
+          {
+            "text": "Số lượng thanh ghi máy thực nhiều hơn máy ảo",
+            "isCorrect": false
+          },
+          {
+            "text": "Ánh xạ các thanh ghi đặc biệt",
+            "isCorrect": true
+          },
+          {
+            "text": "Số lượng thanh ghi máy thực ít hơn máy ảo",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Số lượng thanh ghi máy thực ít hơn máy ảo",
+          "Ánh xạ các thanh ghi đặc biệt"
+        ]
+      },
+      {
+        "question": "Which Azure service provides the ability to analyze large volumes of unstructured text data?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Text Analytics",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Machine Learning",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Translator Text API",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Speech Services",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Text Analytics"
+        ]
+      },
+      {
+        "question": "Which Azure service is integrated with Azure Databricks for data storage and processing?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Data Factory",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Cosmos DB",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure SQL Database",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Data Lake Storage",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Azure Data Lake Storage"
+        ]
+      },
+      {
+        "question": "Các vấn đề gặp phải với cải thiện hiệu suất trong ảo hóa CPU",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Tối ưu việc sử dụng các thanh ghi",
+            "isCorrect": false
+          },
+          {
+            "text": "Chuyển ngữ cảnh của chương trình trong máy ảo",
+            "isCorrect": false
+          },
+          {
+            "text": "Kỹ thuật tối ưu mã máy đích",
+            "isCorrect": true
+          },
+          {
+            "text": "Luồng thực thi chương trình",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Luồng thực thi chương trình",
+          "Kỹ thuật tối ưu mã máy đích"
+        ]
+      },
+      {
+        "question": "What is the primary goal of autoscaling?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To ensure the long-term reliability of a particular virtual resource",
+            "isCorrect": false
+          },
+          {
+            "text": "To ensure that a predefined service level is maintained regardless of external demand",
+            "isCorrect": true
+          },
+          {
+            "text": "To orchestrate the use of multiple parallel resources to direct incoming user requests",
+            "isCorrect": false
+          },
+          {
+            "text": "To ensure the long-term reliability of a particular physical resource",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To ensure that a predefined service level is maintained regardless of external demand"
+        ]
+      },
+      {
+        "question": "Reorder the following Azure DevOps concepts in such a way that each element acts as a container for the next concept in the list: (chọn phần nằm ở top)",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Organization",
+            "isCorrect": false
+          },
+          {
+            "text": "Region",
+            "isCorrect": false
+          },
+          {
+            "text": "Project",
+            "isCorrect": false
+          },
+          {
+            "text": "Work item",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Work item"
+        ]
+      },
+      {
+        "question": "What is the primary benefit of using Azure Container Instances?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Lower container startup time",
+            "isCorrect": true
+          },
+          {
+            "text": "Simplified container orchestration",
+            "isCorrect": false
+          },
+          {
+            "text": "Higher container density",
+            "isCorrect": false
+          },
+          {
+            "text": "Built-in container security",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Lower container startup time"
+        ]
+      },
+      {
+        "question": "What role does Apache Spark play in Azure Databricks?",
+        "type": "single",
+        "options": [
+          {
+            "text": "It is the visualization tool for data analysis",
+            "isCorrect": false
+          },
+          {
+            "text": "It is the storage layer for data in Databricks",
+            "isCorrect": false
+          },
+          {
+            "text": "It is the processing engine for data manipulation and analysis",
+            "isCorrect": true
+          },
+          {
+            "text": "It is the authentication and access control mechanism for Databricks",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "It is the processing engine for data manipulation and analysis"
+        ]
+      },
+      {
+        "question": "What is the primary use case for Azure Container Instances?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Batch processing",
+            "isCorrect": true
+          },
+          {
+            "text": "Long-running applications",
+            "isCorrect": false
+          },
+          {
+            "text": "Real-time stream processing",
+            "isCorrect": false
+          },
+          {
+            "text": "Stateful applications",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Batch processing"
+        ]
+      },
+      {
+        "question": "One disadvantage of IaC is that you have to put sensitive information in source control as ARM template parameter files.",
+        "type": "truefalse",
+        "options": [],
+        "correctAnswers": []
+      },
+      {
+        "question": "What type of data sources can be imported into Azure Databricks?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Structured data only",
+            "isCorrect": false
+          },
+          {
+            "text": "Both structured and unstructured data",
+            "isCorrect": true
+          },
+          {
+            "text": "Unstructured data only",
+            "isCorrect": false
+          },
+          {
+            "text": "Numerical data only",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Both structured and unstructured data"
+        ]
+      },
+      {
+        "question": "Which type of container technology is supported by Azure Container Instances?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Kubernetes",
+            "isCorrect": false
+          },
+          {
+            "text": "Docker",
+            "isCorrect": true
+          },
+          {
+            "text": "OpenShift",
+            "isCorrect": false
+          },
+          {
+            "text": "Mesos",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Docker"
+        ]
+      },
+      {
+        "question": "Which container registry can be used to store container images for use with Azure Container Instances?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Container Registry",
+            "isCorrect": true
+          },
+          {
+            "text": "Docker Hub",
+            "isCorrect": false
+          },
+          {
+            "text": "Amazon Elastic Container Registry",
+            "isCorrect": false
+          },
+          {
+            "text": "Google Container Registry",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Container Registry"
+        ]
+      },
+      {
+        "question": "Which Azure CLI command is used to create a new Azure Container Instance?",
+        "type": "single",
+        "options": [
+          {
+            "text": "az instance create",
+            "isCorrect": false
+          },
+          {
+            "text": "az instance new",
+            "isCorrect": false
+          },
+          {
+            "text": "az container new",
+            "isCorrect": false
+          },
+          {
+            "text": "az container create",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "az container create"
+        ]
+      },
+      {
+        "question": "What is Azure Container Instances primarily used for?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Monitoring container performance",
+            "isCorrect": false
+          },
+          {
+            "text": "Storing container images",
+            "isCorrect": false
+          },
+          {
+            "text": "Managing Kubernetes clusters",
+            "isCorrect": false
+          },
+          {
+            "text": "Running containers in the cloud",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Running containers in the cloud"
+        ]
+      },
+      {
+        "question": "You work for a cab company that is storing trip data in Parquet format and fare data in CSV format. You are required to generate a report to list all the trips aggregated using the City field. The report should contain all fields from both files.Trip file format (Parquet):tripId, driverId, City, StartTime, EndTimeFare file format (CSV):tripId, FareFill in the blanks of the following code snippet to achieve the preceding objective:%%scalaval fromcsv = spark.read.options(Map(\"inferSchema\"->\"true\",\"header\"->\"true\")).csv(\"abfss://path/to/csv/*\")val fromparquet = spark.read.options(Map(\"inferSchema\"->\"true\")).parquet(\"abfss:// abfss://path/to/parquet/*\")val joinDF = fromcsv.________(fromparquet,fromcsv(\"tripId\") ===\nfromparquet(\"tripId\"),\"inner\")._________(\"City\")",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "orderBy",
+            "isCorrect": false
+          },
+          {
+            "text": "select",
+            "isCorrect": false
+          },
+          {
+            "text": "join",
+            "isCorrect": true
+          },
+          {
+            "text": "groupBy",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "join",
+          "groupBy"
+        ]
+      },
+      {
+        "question": "What is Azure Databricks primarily used for?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Image processing",
+            "isCorrect": false
+          },
+          {
+            "text": "Data storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Data import and analysis",
+            "isCorrect": true
+          },
+          {
+            "text": "Social media integration",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Data import and analysis"
+        ]
+      }
+    ]
+  },
+  "Quiz 6": {
+    "questions": [
+      {
+        "question": "Trong kernel space và User space có các lớp, lớp nào được sử dụng để ảo hóa phần lưu trữ",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "File System",
+            "isCorrect": true
+          },
+          {
+            "text": "Appliaction",
+            "isCorrect": false
+          },
+          {
+            "text": "Device driver",
+            "isCorrect": false
+          },
+          {
+            "text": "Block interface",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "File System",
+          "Block interface"
+        ]
+      },
+      {
+        "question": "Trong các kỹ thuật sau, kỹ thuật nào được hỗ trợ bởi phần cứng:",
+        "type": "single",
+        "options": [
+          {
+            "text": "Extended page table",
+            "isCorrect": true
+          },
+          {
+            "text": "Shadow page table",
+            "isCorrect": false
+          },
+          {
+            "text": "Page table",
+            "isCorrect": false
+          },
+          {
+            "text": "virtual PTBR",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Extended page table"
+        ]
+      },
+      {
+        "question": "System call được sử dụng:",
+        "type": "single",
+        "options": [
+          {
+            "text": "IO Driver gọi các function trong Virtual Machine Monitor",
+            "isCorrect": false
+          },
+          {
+            "text": "Application gọi dịch vụ trong Guest OS",
+            "isCorrect": true
+          },
+          {
+            "text": "Guest OS gọi rountine trong IO Driver",
+            "isCorrect": false
+          },
+          {
+            "text": "Virtual Machine Monitor gửi request  Physical Hardware",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Application gọi dịch vụ trong Guest OS"
+        ]
+      },
+      {
+        "question": "Metadata lưu trữ những thông tin nào",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Attributes",
+            "isCorrect": true
+          },
+          {
+            "text": "Ownership",
+            "isCorrect": true
+          },
+          {
+            "text": "Permission",
+            "isCorrect": true
+          },
+          {
+            "text": "Content",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Attributes",
+          "Ownership",
+          "Permission"
+        ]
+      },
+      {
+        "question": "Các kỹ thuật I/O truyền thống:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Port Mapped IO",
+            "isCorrect": false
+          },
+          {
+            "text": "PCI / PCI Express",
+            "isCorrect": true
+          },
+          {
+            "text": "Direct memory Access (DMA)",
+            "isCorrect": true
+          },
+          {
+            "text": "Memory Mapped IO (MMIO)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Direct memory Access (DMA)",
+          "PCI / PCI Express"
+        ]
+      },
+      {
+        "question": "Một file lớn chia ra thành các thành phần nhỏ hơn để lữu trữ. Trong file system level chia ra file lớn thành các:",
+        "type": "single",
+        "options": [
+          {
+            "text": "i-node",
+            "isCorrect": false
+          },
+          {
+            "text": "block",
+            "isCorrect": false
+          },
+          {
+            "text": "chunks",
+            "isCorrect": true
+          },
+          {
+            "text": "binary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "chunks"
+        ]
+      },
+      {
+        "question": "Trong các thành phần bên dưới thành phần nào có bus của máy tính được nối giữa các thiết bị phần cứng",
+        "type": "single",
+        "options": [
+          {
+            "text": "Aynchronous DMA",
+            "isCorrect": false
+          },
+          {
+            "text": "PCI & PCI Express",
+            "isCorrect": true
+          },
+          {
+            "text": "DMA",
+            "isCorrect": false
+          },
+          {
+            "text": "Synchronous DMA",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "PCI & PCI Express"
+        ]
+      },
+      {
+        "question": "Trong ảo hóa nơi lưu trữ ở cấp độ block trên các thiết bị chuyên dụng hoặc các bộ định tuyến thông minh, đây là cách tiếp cận:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Storage-based Virtualization",
+            "isCorrect": false
+          },
+          {
+            "text": "Guest-based Virtualization",
+            "isCorrect": false
+          },
+          {
+            "text": "Host-based Virtualization",
+            "isCorrect": false
+          },
+          {
+            "text": "Network-based Virtualization",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Network-based Virtualization"
+        ]
+      },
+      {
+        "question": "Thuộc tính nào trong ảo hóa bộ lưu trữ ảnh hưởng đến tăng hay giảm quy mô lưu trữ dữ liệu",
+        "type": "single",
+        "options": [
+          {
+            "text": "Availability",
+            "isCorrect": false
+          },
+          {
+            "text": "Scalability",
+            "isCorrect": true
+          },
+          {
+            "text": "Security",
+            "isCorrect": false
+          },
+          {
+            "text": "Manageability",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Scalability"
+        ]
+      },
+      {
+        "question": "Trong kiến trúc SAN - Storage Area Network ảo hóa thiết bị lưu trữ theo cách tiếp cận nào:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "File level system approach",
+            "isCorrect": false
+          },
+          {
+            "text": "Storage-based approach",
+            "isCorrect": true
+          },
+          {
+            "text": "Network-based approach",
+            "isCorrect": true
+          },
+          {
+            "text": "Host-based approach",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Host-based approach",
+          "Network-based approach",
+          "Storage-based approach"
+        ]
+      },
+      {
+        "question": "Hyper-call được sử dụng để giao tiếp các thành phần nào trong ảo hóa IO",
+        "type": "single",
+        "options": [
+          {
+            "text": "Application & Guest OS",
+            "isCorrect": false
+          },
+          {
+            "text": "Device Driver & VMM IO Component",
+            "isCorrect": true
+          },
+          {
+            "text": "Guest OS & Device Driver",
+            "isCorrect": false
+          },
+          {
+            "text": "VMM IO Component & Physical Device",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Device Driver & VMM IO Component"
+        ]
+      },
+      {
+        "question": "Extended Page Table được sử dụng:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Lấy địa chỉ thực của máy thực",
+            "isCorrect": false
+          },
+          {
+            "text": "Quản lý page của máy thực",
+            "isCorrect": false
+          },
+          {
+            "text": "Lấy địa chỉ thực của máy ảo",
+            "isCorrect": true
+          },
+          {
+            "text": "Quản lý page của máy ảo",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Quản lý page của máy ảo",
+          "Lấy địa chỉ thực của máy ảo"
+        ]
+      },
+      {
+        "question": "Các tác vụ DMA do phần mềm gây ra",
+        "type": "single",
+        "options": [
+          {
+            "text": "PCI-PCI Bridge",
+            "isCorrect": false
+          },
+          {
+            "text": "Asynchronous DMA",
+            "isCorrect": false
+          },
+          {
+            "text": "PCI-ISA Bridge",
+            "isCorrect": false
+          },
+          {
+            "text": "Synchronous DMA",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Synchronous DMA"
+        ]
+      },
+      {
+        "question": "Kiến trúc lưu trữ nào truy cập trực tiếp vào hệ thống lữu trữ dữ liệu không qua hệ thống mạng",
+        "type": "single",
+        "options": [
+          {
+            "text": "DAS - Direct Attached Storage",
+            "isCorrect": true
+          },
+          {
+            "text": "MAC",
+            "isCorrect": false
+          },
+          {
+            "text": "NAS - Network Attached Storage",
+            "isCorrect": false
+          },
+          {
+            "text": "SAN - Storage Area Network",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "DAS - Direct Attached Storage"
+        ]
+      },
+      {
+        "question": "Client gửi request ghi dữ liệu xuống server lưu trữ và các server thực hiện nhân bản dữ liệu theo cơ chế replication đây là cách nhân bản theo cơ chế:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Blocking",
+            "isCorrect": false
+          },
+          {
+            "text": "Asynchronous",
+            "isCorrect": false
+          },
+          {
+            "text": "Non-Blocking",
+            "isCorrect": false
+          },
+          {
+            "text": "Synchronous",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Synchronous"
+        ]
+      }
+    ]
+  },
+  "Quiz 7": {
+    "questions": [
+      {
+        "question": "Which of the following programming languages is NOT supported by Azure App Service?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Java",
+            "isCorrect": false
+          },
+          {
+            "text": "C#",
+            "isCorrect": false
+          },
+          {
+            "text": "PHP",
+            "isCorrect": false
+          },
+          {
+            "text": "Swift",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Swift"
+        ]
+      },
+      {
+        "question": "Thuộc tính nào trong ảo hóa bộ lưu trữ ảnh hưởng đến tăng hay giảm quy mô lưu trữ dữ liệu",
+        "type": "single",
+        "options": [
+          {
+            "text": "Security",
+            "isCorrect": false
+          },
+          {
+            "text": "Manageability",
+            "isCorrect": false
+          },
+          {
+            "text": "Availability",
+            "isCorrect": false
+          },
+          {
+            "text": "Scalability",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Scalability"
+        ]
+      },
+      {
+        "question": "What type of alert in Azure Monitor is triggered based on specific patterns or anomalies detected in log data?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Log Analytics Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Anomaly Alerts",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Anomaly Alerts"
+        ]
+      },
+      {
+        "question": "What type of alert in Azure Monitor is automatically generated for potential security threats identified by Azure Security Center?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": true
+          },
+          {
+            "text": "Log Analytics Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Security Center Alerts",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Activity Log Alerts"
+        ]
+      },
+      {
+        "question": "Which type of alert in Azure Monitor is triggered based on the health status of individual Azure resources?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Security Center Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Resource Health Alerts",
+            "isCorrect": true
+          },
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Resource Health Alerts"
+        ]
+      },
+      {
+        "question": "Trong kernel space và User space có các lớp, lớp nào được sử dụng để ảo hóa phần lưu trữ",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Device driver",
+            "isCorrect": false
+          },
+          {
+            "text": "Block interface",
+            "isCorrect": true
+          },
+          {
+            "text": "Appliaction",
+            "isCorrect": false
+          },
+          {
+            "text": "File System",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "File System",
+          "Block interface"
+        ]
+      },
+      {
+        "question": "Which type of alert in Azure Monitor allows you to create custom queries to analyze log data and trigger alerts based on specific conditions?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Smart Detection Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Log Analytics Alerts",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Log Analytics Alerts"
+        ]
+      },
+      {
+        "question": "Thành phần trừu tượng cơ bản trong Spark Streaming",
+        "type": "single",
+        "options": [
+          {
+            "text": "DStream",
+            "isCorrect": true
+          },
+          {
+            "text": "RDD",
+            "isCorrect": false
+          },
+          {
+            "text": "Shared Variable",
+            "isCorrect": false
+          },
+          {
+            "text": "DSpark",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "DStream"
+        ]
+      },
+      {
+        "question": "Trong ảo hóa nơi lưu trữ ở cấp độ block trên các thiết bị chuyên dụng hoặc các bộ định tuyến thông minh, đây là cách tiếp cận:",
+        "type": "single",
+        "options": [
+          {
+            "text": "Host-based Virtualization",
+            "isCorrect": false
+          },
+          {
+            "text": "Storage-based Virtualization",
+            "isCorrect": false
+          },
+          {
+            "text": "Guest-based Virtualization",
+            "isCorrect": false
+          },
+          {
+            "text": "Network-based Virtualization",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Network-based Virtualization"
+        ]
+      },
+      {
+        "question": "Which Azure service allows you to visualize monitoring data collected by Azure Monitor?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Data Lake Storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Dashboards",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Event Hubs",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Data Factory",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Dashboards"
+        ]
+      },
+      {
+        "question": "Kiến trúc lưu trữ nào truy cập trực tiếp vào hệ thống lữu trữ dữ liệu không qua hệ thống mạng",
+        "type": "single",
+        "options": [
+          {
+            "text": "SAN - Storage Area Network",
+            "isCorrect": false
+          },
+          {
+            "text": "DAS - Direct Attached Storage",
+            "isCorrect": true
+          },
+          {
+            "text": "MAC",
+            "isCorrect": false
+          },
+          {
+            "text": "NAS - Network Attached Storage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "DAS - Direct Attached Storage"
+        ]
+      },
+      {
+        "question": "Client gửi request ghi dữ liệu xuống server lưu trữ và các server thực hiện nhân bản dữ liệu theo cơ chế replication đây là cách nhân bản theo cơ chế:",
+        "type": "single",
+        "options": [
+          {
+            "text": "Synchronous",
+            "isCorrect": true
+          },
+          {
+            "text": "Asynchronous",
+            "isCorrect": false
+          },
+          {
+            "text": "Non-Blocking",
+            "isCorrect": false
+          },
+          {
+            "text": "Blocking",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Synchronous"
+        ]
+      },
+      {
+        "question": "Một file lớn chia ra thành các thành phần nhỏ hơn để lữu trữ. Trong file system level chia ra file lớn thành các:",
+        "type": "single",
+        "options": [
+          {
+            "text": "i-node",
+            "isCorrect": false
+          },
+          {
+            "text": "block",
+            "isCorrect": false
+          },
+          {
+            "text": "chunks",
+            "isCorrect": true
+          },
+          {
+            "text": "binary",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "chunks"
+        ]
+      },
+      {
+        "question": "Which deployment method is commonly used to deploy web applications to Azure App Service?",
+        "type": "single",
+        "options": [
+          {
+            "text": "RDP",
+            "isCorrect": false
+          },
+          {
+            "text": "SSH",
+            "isCorrect": false
+          },
+          {
+            "text": "Telnet",
+            "isCorrect": false
+          },
+          {
+            "text": "FTP",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "FTP"
+        ]
+      },
+      {
+        "question": "Metadata lưu trữ những thông tin nào",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Ownership",
+            "isCorrect": true
+          },
+          {
+            "text": "Permission",
+            "isCorrect": true
+          },
+          {
+            "text": "Content",
+            "isCorrect": false
+          },
+          {
+            "text": "Attributes",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Attributes",
+          "Ownership",
+          "Permission"
+        ]
+      },
+      {
+        "question": "How often are metrics collected by Azure Monitor?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Every minute",
+            "isCorrect": true
+          },
+          {
+            "text": "On demand",
+            "isCorrect": false
+          },
+          {
+            "text": "Every hour",
+            "isCorrect": false
+          },
+          {
+            "text": "Every day",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Every minute"
+        ]
+      },
+      {
+        "question": "Trong kiến trúc SAN - Storage Area Network ảo hóa thiết bị lưu trữ theo cách tiếp cận nào:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Storage-based approach",
+            "isCorrect": true
+          },
+          {
+            "text": "Host-based approach",
+            "isCorrect": true
+          },
+          {
+            "text": "File level system approach",
+            "isCorrect": false
+          },
+          {
+            "text": "Network-based approach",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Host-based approach",
+          "Network-based approach",
+          "Storage-based approach"
+        ]
+      },
+      {
+        "question": "What is the purpose of deployment credentials in Azure App Service?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To configure custom SSL certificates",
+            "isCorrect": false
+          },
+          {
+            "text": "To encrypt sensitive data in the web application",
+            "isCorrect": false
+          },
+          {
+            "text": "To secure access to the Azure Portal",
+            "isCorrect": false
+          },
+          {
+            "text": "To authenticate the deployment source",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "To authenticate the deployment source"
+        ]
+      },
+      {
+        "question": "What is Azure App Service primarily used for?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Building and hosting web applications",
+            "isCorrect": true
+          },
+          {
+            "text": "Hosting virtual machines",
+            "isCorrect": false
+          },
+          {
+            "text": "Storing and processing big data",
+            "isCorrect": false
+          },
+          {
+            "text": "Managing databases",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Building and hosting web applications"
+        ]
+      },
+      {
+        "question": "What is the purpose of deployment slots in Azure App Service?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To create staging environments for testing",
+            "isCorrect": true
+          },
+          {
+            "text": "To configure custom domain names",
+            "isCorrect": false
+          },
+          {
+            "text": "To provide additional storage for web applications",
+            "isCorrect": false
+          },
+          {
+            "text": "To manage environment variables",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To create staging environments for testing"
+        ]
+      },
+      {
+        "question": "Which of the following are CI tools? (Multiple answers are possible)",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Kubernetes",
+            "isCorrect": false
+          },
+          {
+            "text": "Jenkins",
+            "isCorrect": true
+          },
+          {
+            "text": "AWS Cloudbuild",
+            "isCorrect": true
+          },
+          {
+            "text": "GitHub Actions",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Jenkins",
+          "GitHub Actions",
+          "AWS Cloudbuild"
+        ]
+      },
+      {
+        "question": "What type of alert in Azure Monitor can be configured to notify you about changes to Azure resource configurations?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": true
+          },
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Service Health Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Log Analytics Alerts",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Activity Log Alerts"
+        ]
+      },
+      {
+        "question": "Jenkins agents are required for which of the following reasons? (Multiple answers are possible)",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "They allow for parallel builds.",
+            "isCorrect": true
+          },
+          {
+            "text": "They make builds more scalable.",
+            "isCorrect": true
+          },
+          {
+            "text": "They keep the Jenkins master less busy.",
+            "isCorrect": true
+          },
+          {
+            "text": "They help offload the management function from the Jenkins master",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "They make builds more scalable.",
+          "They allow for parallel builds.",
+          "They keep the Jenkins master less busy."
+        ]
+      },
+      {
+        "question": "Which type of alert in Azure Monitor is triggered based on the health status of Azure virtual machines and other compute resources?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Resource Health Alerts",
+            "isCorrect": true
+          },
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Log Analytics Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Resource Health Alerts"
+        ]
+      },
+      {
+        "question": "Mức độ lưu trữ mặc định của hàm cache() là gì?",
+        "type": "single",
+        "options": [
+          {
+            "text": "MEMORY_ONLY",
+            "isCorrect": true
+          },
+          {
+            "text": "MEMORY_ONLY_SER",
+            "isCorrect": false
+          },
+          {
+            "text": "DISK_ONLY",
+            "isCorrect": false
+          },
+          {
+            "text": "MEMORY_AND_DISK",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "MEMORY_ONLY"
+        ]
+      },
+      {
+        "question": "What is the primary objective of monitoring resources with Azure Monitor?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To optimize resource usage and performance",
+            "isCorrect": true
+          },
+          {
+            "text": "To manage billing and costs",
+            "isCorrect": false
+          },
+          {
+            "text": "To ensure data security",
+            "isCorrect": false
+          },
+          {
+            "text": "To track user logins",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To optimize resource usage and performance"
+        ]
+      },
+      {
+        "question": "What is the purpose of creating alerts in Azure Monitor?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To analyze historical data",
+            "isCorrect": false
+          },
+          {
+            "text": "To send notifications when certain conditions are met",
+            "isCorrect": true
+          },
+          {
+            "text": "To automatically fix issues",
+            "isCorrect": false
+          },
+          {
+            "text": "To manage billing and costs",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To send notifications when certain conditions are met"
+        ]
+      },
+      {
+        "question": "Which query language is used to analyze monitoring data in Azure Log Analytics?",
+        "type": "single",
+        "options": [
+          {
+            "text": "SQL",
+            "isCorrect": false
+          },
+          {
+            "text": "Python",
+            "isCorrect": false
+          },
+          {
+            "text": "Kusto Query Language (KQL)",
+            "isCorrect": true
+          },
+          {
+            "text": "JavaScript",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Kusto Query Language (KQL)"
+        ]
+      },
+      {
+        "question": "What type of alert in Azure Monitor can be used to notify you about potential security vulnerabilities or threats detected in your Azure environment?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Log Analytics Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Security Center Alerts",
+            "isCorrect": true
+          },
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Security Center Alerts"
+        ]
+      },
+      {
+        "question": "What type of alert in Azure Monitor can be configured to notify you about changes to Azure Active Directory resources, such as user accounts or groups?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Metric Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Activity Log Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Log Analytics Alerts",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure AD Alerts",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Azure AD Alerts"
+        ]
+      },
+      {
+        "question": "What is the purpose of deployment history in Azure App Service?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To track deployment activities and rollback changes if necessary",
+            "isCorrect": false
+          },
+          {
+            "text": "To monitor the performance of the web application",
+            "isCorrect": false
+          },
+          {
+            "text": "To track changes to the web application code",
+            "isCorrect": false
+          },
+          {
+            "text": "To manage custom domain names",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To manage custom domain names"
+        ]
+      },
+      {
+        "question": "Which Azure service provides a fully managed platform for building, deploying, and scaling web applications?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Kubernetes Service",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure App Service",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Virtual Machines",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Functions",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure App Service"
+        ]
+      }
+    ]
+  },
+  "Quiz 8": {
+    "questions": [
+      {
+        "question": "What is a key principle of Azure load balancing?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Managing database schema in Azure SQL Database",
+            "isCorrect": false
+          },
+          {
+            "text": "Distributing network traffic evenly across multiple servers or virtual machines",
+            "isCorrect": true
+          },
+          {
+            "text": "Configuring DNS settings for Azure resources",
+            "isCorrect": false
+          },
+          {
+            "text": "Securing data at rest in Azure storage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Distributing network traffic evenly across multiple servers or virtual machines"
+        ]
+      },
+      {
+        "question": "When setting up Azure VMs to receive internet traffic from a Public Load Balancer, what configuration step is crucial for allowing inbound communication to the VMs?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Configuring a Network Security Group (NSG)",
+            "isCorrect": true
+          },
+          {
+            "text": "Assigning a private IP address to each VM",
+            "isCorrect": false
+          },
+          {
+            "text": "Installing an antivirus on each VM",
+            "isCorrect": false
+          },
+          {
+            "text": "Setting up a Virtual Private Network (VPN) on the VMs",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Configuring a Network Security Group (NSG)"
+        ]
+      },
+      {
+        "question": "Which Azure service is typically used for configuring routing and implementing custom network paths in a virtual network?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Route Table",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Traffic Manager",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Virtual Network Gateway",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Load Balancer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Route Table"
+        ]
+      },
+      {
+        "question": "What is Azure Load Balancing used for?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Distributing network traffic across multiple servers or virtual machines",
+            "isCorrect": true
+          },
+          {
+            "text": "Securing data at rest in Azure storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Optimizing database performance in Azure SQL Database",
+            "isCorrect": false
+          },
+          {
+            "text": "Managing DNS configurations",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Distributing network traffic across multiple servers or virtual machines"
+        ]
+      },
+      {
+        "question": "VLAN được ảo hóa ở lớp:",
+        "type": "single",
+        "options": [
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": true
+          },
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "2"
+        ]
+      },
+      {
+        "question": "Which Azure service can be used to dynamically scale Azure Application Gateway based on traffic load?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Traffic Manager",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Load Balancer",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Autoscale",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Monitor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Autoscale"
+        ]
+      },
+      {
+        "question": "Which Azure service can be integrated with Azure Load Balancer for automatic scaling based on traffic load?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Monitor",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Autoscale",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Security Center",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Traffic Manager",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Autoscale"
+        ]
+      },
+      {
+        "question": "Các công việc cần thực hiện ảo hóa đường dữ liệu",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Hop to cloud case",
+            "isCorrect": true
+          },
+          {
+            "text": "Virtual routing and forwarding (VRF)",
+            "isCorrect": false
+          },
+          {
+            "text": "Hop to hop case",
+            "isCorrect": true
+          },
+          {
+            "text": "Virtual forwarding instance (VFI)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Hop to hop case",
+          "Hop to cloud case"
+        ]
+      },
+      {
+        "question": "What is the purpose of load balancing rules in Azure Load Balancer?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To configure health probes",
+            "isCorrect": false
+          },
+          {
+            "text": "To define the backend servers that receive traffic",
+            "isCorrect": false
+          },
+          {
+            "text": "To define how incoming traffic is distributed to backend servers",
+            "isCorrect": true
+          },
+          {
+            "text": "To configure custom domain names",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To define how incoming traffic is distributed to backend servers"
+        ]
+      },
+      {
+        "question": "Which routing method of Azure Application Gateway distributes traffic evenly across backend servers?",
+        "type": "single",
+        "options": [
+          {
+            "text": "URL-based routing",
+            "isCorrect": false
+          },
+          {
+            "text": "Cookie-based routing",
+            "isCorrect": false
+          },
+          {
+            "text": "Least-connections routing",
+            "isCorrect": false
+          },
+          {
+            "text": "Round-robin routing",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Round-robin routing"
+        ]
+      },
+      {
+        "question": "Which Azure service provides content caching capabilities for Azure Load Balancer?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure CDN",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Blob Storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Data Lake Storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Cache for Redis",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Azure Cache for Redis"
+        ]
+      },
+      {
+        "question": "Trong các giao thức sau, giao thức nào được sử dụng ảo hóa giữa nhiều loại mạng với kỹ thuật đường hầm",
+        "type": "single",
+        "options": [
+          {
+            "text": "UDP",
+            "isCorrect": false
+          },
+          {
+            "text": "GRE (Generic Routing Encapsulation)",
+            "isCorrect": true
+          },
+          {
+            "text": "MPLS (Multiprotocol Label Switch)",
+            "isCorrect": false
+          },
+          {
+            "text": "802.1Q",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "GRE (Generic Routing Encapsulation)"
+        ]
+      },
+      {
+        "question": "Which Azure service provides built-in monitoring and logging capabilities for Azure Load Balancer?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Log Analytics",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Security Center",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Application Insights",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Monitor",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Log Analytics"
+        ]
+      },
+      {
+        "question": "What Azure service is commonly used for multiple-site hosting to distribute traffic across different geographical locations?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Virtual Network",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Traffic Manager",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure Application Gateway",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Load Balancer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Traffic Manager"
+        ]
+      },
+      {
+        "question": "Which routing mode of Azure Application Gateway allows routing based on the content of the request?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Cookie-based routing",
+            "isCorrect": false
+          },
+          {
+            "text": "Basic routing",
+            "isCorrect": false
+          },
+          {
+            "text": "URL-based routing",
+            "isCorrect": true
+          },
+          {
+            "text": "Round-robin routing",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "URL-based routing"
+        ]
+      },
+      {
+        "question": "Which layer of the OSI model does Azure Application Gateway operate at?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Layer 3 (Network Layer)",
+            "isCorrect": false
+          },
+          {
+            "text": "Layer 7 (Application Layer)",
+            "isCorrect": true
+          },
+          {
+            "text": "Layer 4 (Transport Layer)",
+            "isCorrect": false
+          },
+          {
+            "text": "Layer 2 (Data Link Layer)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Layer 7 (Application Layer)"
+        ]
+      },
+      {
+        "question": "Điều nào sau đây được tối ưu hóa để lưu trữ lượng lớn dữ liệu phi cấu trúc, chẳng hạn như video và hình ảnh?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Queue",
+            "isCorrect": false
+          },
+          {
+            "text": "File",
+            "isCorrect": false
+          },
+          {
+            "text": "Log",
+            "isCorrect": false
+          },
+          {
+            "text": "Blod",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Blod"
+        ]
+      },
+      {
+        "question": "Trong ảo hóa mạng bên ngoài, thực hiện ảo hóa mấy thành phần:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Ảo hóa mô hình OSI",
+            "isCorrect": false
+          },
+          {
+            "text": "Ảo hóa Router",
+            "isCorrect": false
+          },
+          {
+            "text": "Ảo hóa Switch",
+            "isCorrect": true
+          },
+          {
+            "text": "Ảo hóa gói tin",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Ảo hóa Switch",
+          "Ảo hóa Router"
+        ]
+      },
+      {
+        "question": "Which protocol is commonly used for health probes in Azure Application Gateway?",
+        "type": "single",
+        "options": [
+          {
+            "text": "TCP",
+            "isCorrect": false
+          },
+          {
+            "text": "UDP",
+            "isCorrect": false
+          },
+          {
+            "text": "HTTPS",
+            "isCorrect": false
+          },
+          {
+            "text": "HTTP",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "HTTP"
+        ]
+      },
+      {
+        "question": "How does Azure Application Gateway improve security for web applications?",
+        "type": "single",
+        "options": [
+          {
+            "text": "By encrypting all traffic",
+            "isCorrect": false
+          },
+          {
+            "text": "By blocking all incoming traffic",
+            "isCorrect": false
+          },
+          {
+            "text": "By implementing WAF (Web Application Firewall) policies",
+            "isCorrect": true
+          },
+          {
+            "text": "By limiting the number of concurrent connections",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "By implementing WAF (Web Application Firewall) policies"
+        ]
+      },
+      {
+        "question": "What is the primary purpose of a load balancer in Microsoft Azure?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Data storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Managing virtual machines",
+            "isCorrect": false
+          },
+          {
+            "text": "Distributing incoming network traffic across multiple servers",
+            "isCorrect": true
+          },
+          {
+            "text": "Network monitoring",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Distributing incoming network traffic across multiple servers"
+        ]
+      },
+      {
+        "question": "Which layer of the OSI model does Azure Load Balancer operate at?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Layer 3 (Network Layer)",
+            "isCorrect": false
+          },
+          {
+            "text": "Layer 2 (Data Link Layer)",
+            "isCorrect": false
+          },
+          {
+            "text": "Layer 7 (Application Layer)",
+            "isCorrect": false
+          },
+          {
+            "text": "Layer 4 (Transport Layer)",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Layer 4 (Transport Layer)"
+        ]
+      },
+      {
+        "question": "What does WAF stand for?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Widget Authentication Function",
+            "isCorrect": false
+          },
+          {
+            "text": "Wide Area Filesystem",
+            "isCorrect": false
+          },
+          {
+            "text": "Web Application Firewall",
+            "isCorrect": true
+          },
+          {
+            "text": "Wireless Application Framework",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Web Application Firewall"
+        ]
+      },
+      {
+        "question": "What is the primary input source for Azure Load Balancer?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Static datasets in Azure Data Lake Storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Structured data in Azure SQL Database",
+            "isCorrect": false
+          },
+          {
+            "text": "Incoming network traffic",
+            "isCorrect": true
+          },
+          {
+            "text": "Files stored in Azure Blob Storage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Incoming network traffic"
+        ]
+      },
+      {
+        "question": "What is the purpose of a backend pool in Azure Load Balancer?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To manage user authentication",
+            "isCorrect": false
+          },
+          {
+            "text": "To configure custom domain names",
+            "isCorrect": false
+          },
+          {
+            "text": "To define the backend servers that receive traffic",
+            "isCorrect": true
+          },
+          {
+            "text": "To store SSL certificates",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To define the backend servers that receive traffic"
+        ]
+      },
+      {
+        "question": "What is the primary benefit of using Azure Load Balancer over traditional hardware load balancers?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Easier implementation",
+            "isCorrect": false
+          },
+          {
+            "text": "Higher scalability",
+            "isCorrect": true
+          },
+          {
+            "text": "Better fault tolerance",
+            "isCorrect": false
+          },
+          {
+            "text": "Lower cost",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Higher scalability"
+        ]
+      },
+      {
+        "question": "How does Azure Load Balancer support high availability?",
+        "type": "single",
+        "options": [
+          {
+            "text": "By routing traffic to healthy backend servers",
+            "isCorrect": true
+          },
+          {
+            "text": "By encrypting all traffic",
+            "isCorrect": false
+          },
+          {
+            "text": "By distributing traffic across multiple regions",
+            "isCorrect": false
+          },
+          {
+            "text": "By distributing traffic across multiple availability zones",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "By routing traffic to healthy backend servers"
+        ]
+      },
+      {
+        "question": "Trong các thành phần sau, thành phần nào dùng để chuyển tiếp chuyển mạch gói:",
+        "type": "single",
+        "options": [
+          {
+            "text": "TUN/TAP",
+            "isCorrect": false
+          },
+          {
+            "text": "Linux bridge",
+            "isCorrect": true
+          },
+          {
+            "text": "Hypervisor",
+            "isCorrect": false
+          },
+          {
+            "text": "Virtual NIC",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Linux bridge"
+        ]
+      },
+      {
+        "question": "What is the purpose of health probes in Azure Application Gateway?",
+        "type": "single",
+        "options": [
+          {
+            "text": "To prioritize traffic based on source IP address",
+            "isCorrect": false
+          },
+          {
+            "text": "To route traffic based on session persistence",
+            "isCorrect": false
+          },
+          {
+            "text": "To monitor the health of backend servers",
+            "isCorrect": true
+          },
+          {
+            "text": "To authenticate users",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "To monitor the health of backend servers"
+        ]
+      },
+      {
+        "question": "What type of traffic does Azure Application Gateway primarily handle?",
+        "type": "single",
+        "options": [
+          {
+            "text": "ICMP",
+            "isCorrect": false
+          },
+          {
+            "text": "HTTP/HTTPS",
+            "isCorrect": true
+          },
+          {
+            "text": "TCP",
+            "isCorrect": false
+          },
+          {
+            "text": "UDP",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "HTTP/HTTPS"
+        ]
+      },
+      {
+        "question": "How does Azure Load Balancer handle health probes?",
+        "type": "single",
+        "options": [
+          {
+            "text": "By sending periodic health check requests to backend servers",
+            "isCorrect": true
+          },
+          {
+            "text": "By monitoring CPU usage of backend servers",
+            "isCorrect": false
+          },
+          {
+            "text": "By analyzing network traffic patterns",
+            "isCorrect": false
+          },
+          {
+            "text": "By blocking suspicious IP addresses",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "By sending periodic health check requests to backend servers"
+        ]
+      },
+      {
+        "question": "How does Azure Application Gateway contribute to integrating with web applications?",
+        "type": "single",
+        "options": [
+          {
+            "text": "By providing serverless computing for web applications",
+            "isCorrect": false
+          },
+          {
+            "text": "By managing Azure Active Directory permissions",
+            "isCorrect": false
+          },
+          {
+            "text": "By enabling load balancing and SSL termination for web traffic",
+            "isCorrect": true
+          },
+          {
+            "text": "By hosting and serving static web content",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "By enabling load balancing and SSL termination for web traffic"
+        ]
+      },
+      {
+        "question": "Which feature of Azure Application Gateway allows you to route traffic based on specific URL paths?",
+        "type": "single",
+        "options": [
+          {
+            "text": "SSL termination",
+            "isCorrect": false
+          },
+          {
+            "text": "URL rewrite",
+            "isCorrect": false
+          },
+          {
+            "text": "Custom probes",
+            "isCorrect": false
+          },
+          {
+            "text": "Path-based routing",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Path-based routing"
+        ]
+      },
+      {
+        "question": "Giao thức GRE (Generic Routing Encapsulation) được thực hiện ở lớp:",
+        "type": "single",
+        "options": [
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "text": "1",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "2"
+        ]
+      },
+      {
+        "question": "Which Azure service provides load balancing capabilities for virtual machines?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Azure Traffic Manager",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Virtual Network",
+            "isCorrect": false
+          },
+          {
+            "text": "Azure Load Balancer",
+            "isCorrect": true
+          },
+          {
+            "text": "Azure DNS",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Azure Load Balancer"
+        ]
+      }
+    ]
+  },
+  "Quiz 9": {
+    "questions": [
+      {
+        "question": "Trong thiết kế hệ thống distributed file system thì đặc trưng nào cho phép tất cả client lấy cùng dữ liệu trong suốt thời gian",
+        "type": "single",
+        "options": [
+          {
+            "text": "Consistency",
+            "isCorrect": true
+          },
+          {
+            "text": "Scope",
+            "isCorrect": false
+          },
+          {
+            "text": "Namespace",
+            "isCorrect": false
+          },
+          {
+            "text": "Parallel",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Consistency"
+        ]
+      },
+      {
+        "question": "What is the node in which Hadoop can run?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Standalone node",
+            "isCorrect": true
+          },
+          {
+            "text": "Fully disturbed node or multimode cluster",
+            "isCorrect": true
+          },
+          {
+            "text": "Network CDN",
+            "isCorrect": false
+          },
+          {
+            "text": "Pseudo distributed mode or single node cluster",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Standalone node",
+          "Fully disturbed node or multimode cluster",
+          "Pseudo distributed mode or single node cluster"
+        ]
+      },
+      {
+        "question": "What are the formats for input in Hadoop?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Key-value input format",
+            "isCorrect": true
+          },
+          {
+            "text": "Text input format",
+            "isCorrect": true
+          },
+          {
+            "text": "Sequence file input format.",
+            "isCorrect": true
+          },
+          {
+            "text": "Document column format",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Text input format",
+          "Key-value input format",
+          "Sequence file input format."
+        ]
+      },
+      {
+        "question": "Trong các module bên dưới đặc trưng nào dùng để xác thực và kiểm soát quyền truy cập vào file.",
+        "type": "single",
+        "options": [
+          {
+            "text": "Security",
+            "isCorrect": true
+          },
+          {
+            "text": "Consistency",
+            "isCorrect": false
+          },
+          {
+            "text": "Reliability",
+            "isCorrect": false
+          },
+          {
+            "text": "Namespace",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Security"
+        ]
+      },
+      {
+        "question": "Trong quá trình thiết kế distributed file system thì đặc trưng nào cần chú ý khi cung cấp chức nhiều client truy xuất đồng thời vào file",
+        "type": "single",
+        "options": [
+          {
+            "text": "Consistency",
+            "isCorrect": false
+          },
+          {
+            "text": "Namespace",
+            "isCorrect": false
+          },
+          {
+            "text": "Parallel",
+            "isCorrect": true
+          },
+          {
+            "text": "Scope",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Parallel"
+        ]
+      },
+      {
+        "question": "Distributed File System thường được sử dụng khi nào?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Muốn truy cập dữ liệu từ xa trên các máy có vị trí địa lý xa nhau",
+            "isCorrect": true
+          },
+          {
+            "text": "Trong trường họp backup dữ liệu",
+            "isCorrect": true
+          },
+          {
+            "text": "Kích thước dữ liệu nhỏ hơn kích thước lưu trữ của máy",
+            "isCorrect": false
+          },
+          {
+            "text": "Nhiều người thực hiện trên cùng file",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Nhiều người thực hiện trên cùng file",
+          "Trong trường họp backup dữ liệu",
+          "Muốn truy cập dữ liệu từ xa trên các máy có vị trí địa lý xa nhau"
+        ]
+      },
+      {
+        "question": "What are the data components of Hadoop",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "MapReduce",
+            "isCorrect": false
+          },
+          {
+            "text": "HDFS",
+            "isCorrect": false
+          },
+          {
+            "text": "Hive",
+            "isCorrect": true
+          },
+          {
+            "text": "Pig",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Pig",
+          "Hive"
+        ]
+      },
+      {
+        "question": "From the Option mentioned below which of the following files is configuration files for Hadoop?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "core-site.xml",
+            "isCorrect": true
+          },
+          {
+            "text": "hdfs-site.xml",
+            "isCorrect": true
+          },
+          {
+            "text": "config.hdo",
+            "isCorrect": false
+          },
+          {
+            "text": "mapred-site.xml",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "core-site.xml",
+          "mapred-site.xml",
+          "hdfs-site.xml"
+        ]
+      },
+      {
+        "question": "Vai trò của các thành phần Google File System thì thành phần nào dùng để lưu trữ dữ liệu",
+        "type": "single",
+        "options": [
+          {
+            "text": "DataNode",
+            "isCorrect": false
+          },
+          {
+            "text": "Client",
+            "isCorrect": false
+          },
+          {
+            "text": "Master",
+            "isCorrect": false
+          },
+          {
+            "text": "ChunkServer",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "ChunkServer"
+        ]
+      },
+      {
+        "question": "Để kiểm tra một DataNode còn hoạt động hay không? Master sử dụng message nào?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Heartbeat",
+            "isCorrect": true
+          },
+          {
+            "text": "DataNodeAlive",
+            "isCorrect": false
+          },
+          {
+            "text": "RequestAlive",
+            "isCorrect": false
+          },
+          {
+            "text": "Blockreport",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Heartbeat"
+        ]
+      },
+      {
+        "question": "Những đặc trưng lưu trữ dữ liệu của Hadoop File System",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Môi trường không đồng nhất",
+            "isCorrect": true
+          },
+          {
+            "text": "Conherence - cho phép ghi nhiều đọc nhiều cùng 1 lúc",
+            "isCorrect": false
+          },
+          {
+            "text": "Truy xuất dữ liệu Streaming",
+            "isCorrect": true
+          },
+          {
+            "text": "Tập dữ liệu lớn",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Tập dữ liệu lớn",
+          "Môi trường không đồng nhất",
+          "Truy xuất dữ liệu Streaming"
+        ]
+      },
+      {
+        "question": "Trong các hàm sau, hàm nào được GFS Client đọc dữ liệu từ chunkserver",
+        "type": "single",
+        "options": [
+          {
+            "text": "Read (chunk_handle, chunk_locations)",
+            "isCorrect": false
+          },
+          {
+            "text": "Open (name, read)",
+            "isCorrect": false
+          },
+          {
+            "text": "Read (handle, offset, length, buffer)",
+            "isCorrect": false
+          },
+          {
+            "text": "Read (chunk, handle, byte_range)",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Read (chunk",
+          "handle",
+          "byte_range)"
+        ]
+      },
+      {
+        "question": "How many splits (input) can be made by the Hadoop framework?",
+        "type": "single",
+        "options": [
+          {
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "text": "5",
+            "isCorrect": true
+          },
+          {
+            "text": "2",
+            "isCorrect": false
+          },
+          {
+            "text": "4",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "5"
+        ]
+      },
+      {
+        "question": "Các chức năng của DataNode trong Hadoop File System",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Thực hiện các tác vụ liên quan đến MetaData",
+            "isCorrect": false
+          },
+          {
+            "text": "Thực hiện đọc ghi file theo yêu cầu của client",
+            "isCorrect": true
+          },
+          {
+            "text": "Thực hiện tạo, xóa, sao chép các block trong hệ thống",
+            "isCorrect": true
+          },
+          {
+            "text": "Quản lý MetaData",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Thực hiện đọc ghi file theo yêu cầu của client",
+          "Thực hiện tạo",
+          "xóa",
+          "sao chép các block trong hệ thống"
+        ]
+      },
+      {
+        "question": "Metadata trong GFS Master lưu trữ thông tin nào?",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Lưu trữ các block của file",
+            "isCorrect": false
+          },
+          {
+            "text": "Thông tin truy xuất",
+            "isCorrect": false
+          },
+          {
+            "text": "Vị trí hiện tại của các chunks",
+            "isCorrect": true
+          },
+          {
+            "text": "Ánh xạ từ file xuống chunks",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Ánh xạ từ file xuống chunks",
+          "Vị trí hiện tại của các chunks",
+          "Thông tin truy xuất"
+        ]
+      }
+    ]
+  },
+  "Quiz 10": {
+    "questions": [
+      {
+        "question": "Những khó khăn trong quá trình lập trình song song",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Không biết sức mạnh tính toán của mỗi worker",
+            "isCorrect": false
+          },
+          {
+            "text": "Không biết thứ tự worker truy xuất dữ liệu chi sẽ",
+            "isCorrect": true
+          },
+          {
+            "text": "Không biết khi nào thì một worker thực thi xong",
+            "isCorrect": true
+          },
+          {
+            "text": "Không biết thứ tự chạy của các worker",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Không biết thứ tự chạy của các worker",
+          "Không biết khi nào thì một worker thực thi xong",
+          "Không biết thứ tự worker truy xuất dữ liệu chi sẽ"
+        ]
+      },
+      {
+        "question": "Which is the configuration file for setting up ZooKeeper properties in Kafka?",
+        "type": "single",
+        "options": [
+          {
+            "text": "zookeeper.properties",
+            "isCorrect": true
+          },
+          {
+            "text": "zookeeper.xml",
+            "isCorrect": false
+          },
+          {
+            "text": "kafka.zk.properties",
+            "isCorrect": false
+          },
+          {
+            "text": "zk.yaml",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "zookeeper.properties"
+        ]
+      },
+      {
+        "question": "3 thành phần chính trong model Pregel",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Aggregator",
+            "isCorrect": true
+          },
+          {
+            "text": "Master",
+            "isCorrect": true
+          },
+          {
+            "text": "Worker",
+            "isCorrect": true
+          },
+          {
+            "text": "Storage",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Worker",
+          "Aggregator",
+          "Master"
+        ]
+      },
+      {
+        "question": "JSON, XML thuộc về dạng dữ liệu",
+        "type": "single",
+        "options": [
+          {
+            "text": "UnStructure Data",
+            "isCorrect": false
+          },
+          {
+            "text": "Structured Data",
+            "isCorrect": false
+          },
+          {
+            "text": "Multimedia Data",
+            "isCorrect": false
+          },
+          {
+            "text": "Semi-Structured Data",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Semi-Structured Data"
+        ]
+      },
+      {
+        "question": "MapReduce là một framework nằm ở:",
+        "type": "single",
+        "options": [
+          {
+            "text": "Cloud Application",
+            "isCorrect": false
+          },
+          {
+            "text": "Nằm giữa Cloud Applications & HDFS",
+            "isCorrect": true
+          },
+          {
+            "text": "Client",
+            "isCorrect": false
+          },
+          {
+            "text": "Hadoop Distributed File System (HDFS)",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Nằm giữa Cloud Applications & HDFS"
+        ]
+      },
+      {
+        "question": "Cho bảng dữ liệu như hình bên dưới: Nếu 2 cột Last name & First name lưu trữ ở 1 node & 2 cột Department & ID lưu trữ ở 1 node khác thì thuộc dạng phân đoạn (Segmentation) dữ liệu nào?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Replication",
+            "isCorrect": false
+          },
+          {
+            "text": "Column - Row",
+            "isCorrect": false
+          },
+          {
+            "text": "Vertical",
+            "isCorrect": true
+          },
+          {
+            "text": "Horizontal",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Vertical"
+        ]
+      },
+      {
+        "question": "Các mẫu thiết kế lập trình song song:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Master-Slaves",
+            "isCorrect": true
+          },
+          {
+            "text": "Sequential flow",
+            "isCorrect": false
+          },
+          {
+            "text": "Producer-consumer flow",
+            "isCorrect": true
+          },
+          {
+            "text": "Share work queues",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Master-Slaves",
+          "Producer-consumer flow",
+          "Share work queues"
+        ]
+      },
+      {
+        "question": "Trong pregel một loạt các thao tác trong supersteps toàn cục:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Local storage",
+            "isCorrect": false
+          },
+          {
+            "text": "Local computation",
+            "isCorrect": true
+          },
+          {
+            "text": "Barrier synchronization",
+            "isCorrect": true
+          },
+          {
+            "text": "Gloabal communication",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Local computation",
+          "Gloabal communication",
+          "Barrier synchronization"
+        ]
+      },
+      {
+        "question": "Which is the command to create a topic in Kafka?",
+        "type": "single",
+        "options": [
+          {
+            "text": "kafka-create-topic.sh",
+            "isCorrect": false
+          },
+          {
+            "text": "kafka-topics.sh",
+            "isCorrect": true
+          },
+          {
+            "text": "kafka-producer.sh",
+            "isCorrect": false
+          },
+          {
+            "text": "kafka-cli.sh",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "kafka-topics.sh"
+        ]
+      },
+      {
+        "question": "Những phát biểu sau, phát biểu nào mô tả đúng công việc của JobTracker",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Yêu cầu thực thi lại trong các trường hợp task thực hiện thất bại",
+            "isCorrect": true
+          },
+          {
+            "text": "Lưu lại kết quả và báo cáo trạng thái của task",
+            "isCorrect": false
+          },
+          {
+            "text": "Giám sát thực thi của các slaves",
+            "isCorrect": true
+          },
+          {
+            "text": "Lập lịch các task để slaves thực hiện",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Lập lịch các task để slaves thực hiện",
+          "Giám sát thực thi của các slaves",
+          "Yêu cầu thực thi lại trong các trường hợp task thực hiện thất bại"
+        ]
+      },
+      {
+        "question": "The _____ Api converts input to output and produces results",
+        "type": "single",
+        "options": [
+          {
+            "text": "Connector",
+            "isCorrect": false
+          },
+          {
+            "text": "Stream",
+            "isCorrect": false
+          },
+          {
+            "text": "Producer",
+            "isCorrect": false
+          },
+          {
+            "text": "Consumer",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Stream"
+        ]
+      },
+      {
+        "question": "Những nhược điểm khi sử dụng CSDL key/value so với CSDL quan hệ:",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Phù hợp với hệ thống cloud",
+            "isCorrect": false
+          },
+          {
+            "text": "Phù hợp với việc xử lý dữ liệu khối lượng lớn",
+            "isCorrect": false
+          },
+          {
+            "text": "Tính toàn vẹn dữ liệu",
+            "isCorrect": true
+          },
+          {
+            "text": "Phụ thuộc vào ứng dụng",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "Tính toàn vẹn dữ liệu",
+          "Phụ thuộc vào ứng dụng"
+        ]
+      },
+      {
+        "question": "Có 2 loại trạng thái của mỗi đỉnh: Active & Inactive. Trong mô hình làm việc của worker trong Pregel thì trang thái nào được xác định làm Inactive",
+        "type": "multiple",
+        "options": [
+          {
+            "text": "Communication",
+            "isCorrect": false
+          },
+          {
+            "text": "Initial",
+            "isCorrect": false
+          },
+          {
+            "text": "Barrier",
+            "isCorrect": true
+          },
+          {
+            "text": "Computation",
+            "isCorrect": false
+          }
+        ],
+        "correctAnswers": [
+          "Barrier"
+        ]
+      },
+      {
+        "question": "Which server should be started before starting Kafka server?",
+        "type": "single",
+        "options": [
+          {
+            "text": "Kafka Topic",
+            "isCorrect": false
+          },
+          {
+            "text": "Kafka Producer",
+            "isCorrect": false
+          },
+          {
+            "text": "Kafka Consumer",
+            "isCorrect": false
+          },
+          {
+            "text": "ZooKeeper server",
+            "isCorrect": true
+          }
+        ],
+        "correctAnswers": [
+          "ZooKeeper server"
+        ]
+      }
+    ]
+  }
+}
