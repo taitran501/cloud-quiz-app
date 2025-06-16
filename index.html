@@ -23,23 +23,15 @@
                         <i class="fas fa-list-check"></i>
                     </div>
                     <h3>Chọn Quiz Cụ Thể</h3>
-                    <p>Ôn tập từng quiz riêng biệt</p>
+                    <p>Ôn tập từng quiz riêng biệt với tùy chọn số câu hỏi</p>
                 </div>
 
-                <div class="menu-card" onclick="showRandomQuiz()">
+                <div class="menu-card" onclick="showRandomQuizSettings()">
                     <div class="card-icon">
                         <i class="fas fa-shuffle"></i>
                     </div>
                     <h3>Quiz Ngẫu Nhiên</h3>
-                    <p>Câu hỏi random từ tất cả quiz</p>
-                </div>
-
-                <div class="menu-card" onclick="showAllQuizzes()">
-                    <div class="card-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Ôn Toàn Bộ</h3>
-                    <p>Làm tất cả câu hỏi có sẵn</p>
+                    <p>Câu hỏi random từ tất cả quiz có sẵn</p>
                 </div>
 
                 <div class="menu-card" onclick="showStudySelection()">
@@ -47,7 +39,7 @@
                         <i class="fas fa-book-open"></i>
                     </div>
                     <h3>Ôn Tập</h3>
-                    <p>Xem câu hỏi và đáp án đúng</p>
+                    <p>Xem câu hỏi và đáp án đúng để học</p>
                 </div>
             </div>
         </div>
@@ -58,11 +50,35 @@
                 <button class="back-btn" onclick="showHome()">
                     <i class="fas fa-arrow-left"></i>
                 </button>
-                <h2>Chọn Quiz</h2>
+                <h2>Chọn Quiz Để Làm</h2>
+                <p>Tick chọn các quiz bạn muốn ôn tập</p>
             </header>
 
-            <div class="quiz-list" id="quizList">
-                <!-- Quiz list will be populated by JavaScript -->
+            <div class="quiz-selection-container">
+                <div class="selection-controls">
+                    <button class="control-btn secondary" onclick="selectAllQuizzes()">
+                        <i class="fas fa-check-double"></i>
+                        Chọn Tất Cả
+                    </button>
+                    <button class="control-btn secondary" onclick="clearAllQuizzes()">
+                        <i class="fas fa-times"></i>
+                        Bỏ Chọn
+                    </button>
+                    <div class="selected-info">
+                        <span id="selectedQuizCount">0</span> quiz đã chọn
+                    </div>
+                </div>
+                
+                <div class="quiz-list" id="quizList">
+                    <!-- Quiz list with checkboxes will be populated by JavaScript -->
+                </div>
+
+                <div class="quiz-action-container">
+                    <button class="start-btn" id="proceedBtn" onclick="proceedToSettings()" disabled>
+                        <i class="fas fa-arrow-right"></i>
+                        Tiếp Tục Với Quiz Đã Chọn
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -86,7 +102,7 @@
                 <button class="back-btn" onclick="goBackFromSettings()">
                     <i class="fas fa-arrow-left"></i>
                 </button>
-                <h2>Cài Đặt Quiz</h2>
+                <h2 id="settingsTitle">Cài Đặt Quiz</h2>
             </header>
 
             <div class="settings-container">
@@ -95,6 +111,9 @@
                     <div class="input-group">
                         <input type="number" id="questionCount" min="1" value="10">
                         <span class="input-suffix">câu</span>
+                        <div class="question-count-info">
+                            <small id="maxQuestionInfo">Tối đa: 10 câu</small>
+                        </div>
                     </div>
                 </div>
 
@@ -122,11 +141,6 @@
                             <span class="checkmark"></span>
                             Trộn thứ tự đáp án
                         </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="showExplanations">
-                            <span class="checkmark"></span>
-                            Hiển thị giải thích (nếu có)
-                        </label>
                     </div>
                 </div>
 
@@ -142,6 +156,9 @@
             <header class="quiz-header">
                 <div class="quiz-info">
                     <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+                </div>
+                <div class="quiz-name-display" id="quizNameDisplay">
+                    <!-- Quiz name will be displayed here -->
                 </div>
                 <div id="timer" class="timer">
                     <i class="fas fa-clock"></i>
@@ -201,8 +218,15 @@
                     <!-- Question will be loaded here -->
                 </div>
 
-                <div class="study-answers-container" id="studyAnswersContainer">
-                    <!-- Answers with correct indicators will be loaded here -->
+                <div class="correct-answers-info">
+                    <h4><i class="fas fa-check-circle"></i> Đáp án đúng:</h4>
+                    <div id="studyCorrectAnswers" class="correct-answers-display">
+                        <!-- Correct answers will be displayed here -->
+                    </div>
+                </div>
+
+                <div class="answers-container study-mode" id="studyAnswersContainer">
+                    <!-- All answers will be shown here for reference -->
                 </div>
 
                 <div class="quiz-controls">
@@ -229,29 +253,36 @@
                     <div class="score-circle">
                         <span id="scorePercentage">0%</span>
                     </div>
-                    <div class="score-details">
-                        <p><span id="correctAnswers">0</span> / <span id="totalAnswers">0</span> câu đúng</p>
-                        <p class="time-taken">Thời gian: <span id="timeTaken">0 phút 0 giây</span></p>
+                    <h3 id="scoreText">Chúc mừng!</h3>
+                </div>
+
+                <div class="results-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Đúng: <strong id="correctCount">0</strong></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Sai: <strong id="incorrectCount">0</strong></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Thời gian: <strong id="timeSpent">0:00</strong></span>
                     </div>
                 </div>
 
-                <div class="performance-badge" id="performanceBadge">
-                    <i class="fas fa-trophy"></i>
-                    <span>Xuất sắc!</span>
-                </div>
-
                 <div class="results-actions">
-                    <button class="action-btn" onclick="reviewAnswers()">
+                    <button class="action-btn secondary" onclick="reviewAnswers()">
                         <i class="fas fa-eye"></i>
                         Xem Lại Đáp Án
                     </button>
-                    <button class="action-btn primary" onclick="showHome()">
+                    <button class="action-btn primary" onclick="restartQuiz()">
+                        <i class="fas fa-redo"></i>
+                        Làm Lại Quiz
+                    </button>
+                    <button class="action-btn" onclick="showHome()">
                         <i class="fas fa-home"></i>
                         Về Trang Chủ
-                    </button>
-                    <button class="action-btn" onclick="restartQuiz()">
-                        <i class="fas fa-redo"></i>
-                        Làm Lại
                     </button>
                 </div>
             </div>
@@ -266,7 +297,7 @@
                 <h2>Xem Lại Đáp Án</h2>
             </header>
 
-            <div class="review-container" id="reviewContainer">
+            <div id="reviewContainer" class="review-container">
                 <!-- Review content will be populated by JavaScript -->
             </div>
         </div>
@@ -274,18 +305,24 @@
 
     <!-- Loading Overlay -->
     <div id="loadingOverlay" class="loading-overlay">
-        <div class="spinner"></div>
-        <p>Đang tải dữ liệu...</p>
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Đang tải dữ liệu...</p>
+        </div>
     </div>
 
-    <!-- Confirmation Modal -->
-    <div id="confirmModal" class="modal">
+    <!-- Modal -->
+    <div id="modal" class="modal">
         <div class="modal-content">
-            <h3 id="confirmTitle">Xác nhận</h3>
-            <p id="confirmMessage">Bạn có chắc chắn muốn thực hiện hành động này?</p>
-            <div class="modal-actions">
-                <button class="modal-btn" onclick="closeModal()">Hủy</button>
-                <button class="modal-btn primary" id="confirmBtn">Xác nhận</button>
+            <div class="modal-header">
+                <h3 id="modalTitle">Xác nhận</h3>
+            </div>
+            <div class="modal-body">
+                <p id="modalMessage">Bạn có chắc chắn muốn thực hiện hành động này?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn secondary" onclick="closeModal()">Hủy</button>
+                <button class="modal-btn primary" id="modalConfirmBtn">Xác nhận</button>
             </div>
         </div>
     </div>
